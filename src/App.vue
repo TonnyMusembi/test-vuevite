@@ -14,6 +14,8 @@ import  MyForm from './components/MyForm.vue'
     </a>
   </div>
   <MyForm msg="Vite + Vue" />
+
+  <router-view></router-view>
 </template>
 
 <style scoped>

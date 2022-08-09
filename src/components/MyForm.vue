@@ -30,4 +30,21 @@ const handHeadClick = ()=> {
 
 }
 
+
+function addItemToCart() {
+      if (!itemName.value) return
+      cart.addItem(itemName.value)
+      itemName.value = ''
+    }
+
+
+const api ='';
+fetch('')
+.then((response) => {
+})
+.catch((error) => {
+    console.log(error)
+    
+})
+
 </script>
