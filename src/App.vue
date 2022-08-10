@@ -1,7 +1,13 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import  MyForm from './components/MyForm.vue'
+ import  MyForm from './components/MyForm.vue'
+
+import { RouterView } from 'vue-router';
+
+// <router-view/>
+
+
 </script>
 
 <template>
@@ -10,12 +16,17 @@ import  MyForm from './components/MyForm.vue'
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo"  />
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <MyForm msg="Vite + Vue" />
+  <nav>
+  <router-link to="/"> Home</router-link>
+   <router-link to="/"> About</router-link>
 
-  <router-view></router-view>
+  </nav>
+  <MyForm msg="Vite + Vue" />
+  <!-- <h1>Home</h1> -->
+<!-- <router-view/>   -->
 </template>
 
 <style scoped>

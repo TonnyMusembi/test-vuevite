@@ -7,6 +7,18 @@
     </div>
     <h1 @click="handHeadClick">My Name is {{name}} an my age is {{age}}</h1>
     <MyButton/>
+    <div class="counter">
+        {{counter}}
+0  </div>
+<div class="buttons">
+<button @click="decreasCounter">-</button>
+<button @click="increaseCounter">+</button>
+</div>
+<h1> {{msg}} </h1>
+
+  <button type="button" @click="doubleCount()">
+    count is: {{ count }}
+  </button>
 </template>
 <script setup>
 
@@ -21,6 +33,13 @@ import { ref } from "vue";
 // name,
 // submitForm,
 //  },
+
+
+    // return {
+    //     counter:0
+        
+    // }
+
 const name = ref('Tonny');
 const age =ref(26);
 
@@ -37,6 +56,10 @@ function addItemToCart() {
       itemName.value = ''
     }
 
+methods: {
+    
+    
+}
 
 const api ='';
 fetch('')
@@ -46,5 +69,17 @@ fetch('')
     console.log(error)
     
 })
+const name1= "Tonny"
+console.log(name1)
 
+
+const props = defineProps({
+  msg: String,
+  start: Number,
+});
+
+const count = ref(props.start);
+const doubleCount = () => {
+  return count.value * 2
+  }
 </script>
