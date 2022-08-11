@@ -1,9 +1,9 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
- import  MyForm from './components/MyForm.vue'
+//  import  MyForm from './components/MyForm.vue'
 
-import { RouterView } from 'vue-router';
+// import { RouterView } from 'vue-router';
 
 // <router-view/>
 
@@ -11,8 +11,8 @@ import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
+  <!-- <div> -->
+    <!-- <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
@@ -24,9 +24,9 @@ import { RouterView } from 'vue-router';
    <router-link to="/"> About</router-link>
 
   </nav>
-  <MyForm msg="Vite + Vue" />
+  <MyForm msg="Vite + Vue" /> -->
   <!-- <h1>Home</h1> -->
-<!-- <router-view/>   -->
+<router-view/>  
 </template>
 
 <style scoped>

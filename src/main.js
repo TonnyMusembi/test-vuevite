@@ -3,6 +3,6 @@ import './style.css'
 import App from './App.vue'
 import './tailwind.css'
 
-// import router from "./router/index"
+import router from "./router/index"
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
