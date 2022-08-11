@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue';
+import { ref  ,onMounted} from 'vue';
+
 
 const name = ref('Tonny');
 const age =ref(26);
@@ -18,6 +19,23 @@ function undo(){
     undoing.value=false
 
 }
+const username= ref('Tony')
+function updateUserName(newUserName){
+    username.value=newUserName
+
+}
+onMounted(()=>{
+    updateUserName('Stevo')
+
+})
+const isModalShown = ref(false)
+function showModal(){
+    isModalShown.value=true
+}
+onMounted(()=>{
+    showModal()
+
+})
 
 
 
