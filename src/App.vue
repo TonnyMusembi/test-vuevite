@@ -25,7 +25,11 @@
 
   </nav>
   <MyForm msg="Vite + Vue" /> -->
-  <!-- <h1>Home</h1> -->
+
+<div class=" col-end-1">
+<router-link  to="/">Home</router-link>
+<router-link to="/">Pages</router-link>
+</div>
 <router-view/>  
 </template>
 
