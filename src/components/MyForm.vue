@@ -73,13 +73,13 @@ const name1= "Tonny"
 console.log(name1)
 
 
-const props = defineProps({
-  msg: String,
-  start: Number,
-});
+// const props = defineProps({
+//   msg: String,
+//   start: Number,
+// });
 
-const count = ref(props.start);
-const doubleCount = () => {
-  return count.value * 2
-  }
+// const count = ref(props.start);
+// const doubleCount = () => {
+//   return count.value * 2
+//   }
 </script>

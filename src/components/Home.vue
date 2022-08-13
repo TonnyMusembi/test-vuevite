@@ -37,7 +37,18 @@ onMounted(()=>{
 
 })
 
+ const arr1 = ["pankaj", "sumit", "chandan", "ajay"];
+      
+    console.log(arr1.toString());
+      
+    arr1[2] = "Narayan"; // possible
+      
+    console.log(arr1.toString());
 
+
+    const first =[0,1,2];
+    const second =[3,4,5];
+    const third = first.concat(second);
 
 
 </script>
@@ -63,5 +74,8 @@ onMounted(()=>{
   <button type="button" @click="doubleCount()">
     count is: {{ count }}
   </button>
+
+
+
 
 </template>
