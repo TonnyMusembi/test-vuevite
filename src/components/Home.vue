@@ -50,6 +50,23 @@ onMounted(()=>{
     const second =[3,4,5];
     const third = first.concat(second);
 
+    // url =""
+    // fetch('url')
+    // .then((response) => {
+    //     console.log(response)
+        
+    // })
+    // .catch((error) => {
+    //     console.log(error)
+    // })
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(result => result.json())
+    .then((output) => {
+        console.log('Output: ', output);
+        
+}).catch(err => console.error(err));
+
 
 </script>
 
@@ -74,8 +91,5 @@ onMounted(()=>{
   <button type="button" @click="doubleCount()">
     count is: {{ count }}
   </button>
-
-
-
 
 </template>
