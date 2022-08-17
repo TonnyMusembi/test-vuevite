@@ -68,6 +68,15 @@ onMounted(()=>{
 }).catch(err => console.error(err));
 
 
+const linearSearch = (list, item) => {
+  for (const [i, element] of list.entries()) {
+    if (element === item) {
+      return i
+    }
+  }
+}
+
+
 </script>
 
 <template>
