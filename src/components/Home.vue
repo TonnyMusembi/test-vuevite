@@ -97,4 +97,14 @@ onMounted(()=>{
     :items="items"
   />
 
+    <div class="fixed w-64 left-0 top-0 bottom-0 border-r" style="background: #e5302c;">
+
+    <div class="text-center">
+
+    </div>
+      </div>
+
+
+
+
 </template>
