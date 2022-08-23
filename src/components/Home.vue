@@ -1,7 +1,6 @@
 <script setup>
 import { ref  ,onMounted} from 'vue';
 
-
 const name = ref('Tonny');
 const age =ref(26);
 
@@ -68,13 +67,6 @@ onMounted(()=>{
 }).catch(err => console.error(err));
 
 
-const linearSearch = (list, item) => {
-  for (const [i, element] of list.entries()) {
-    if (element === item) {
-      return i
-    }
-  }
-}
 
 
 </script>
@@ -100,5 +92,9 @@ const linearSearch = (list, item) => {
   <button type="button" @click="doubleCount()">
     count is: {{ count }}
   </button>
+<EasyDataTable
+    :headers="headers"
+    :items="items"
+  />
 
 </template>
