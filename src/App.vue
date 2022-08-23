@@ -6,6 +6,7 @@
 // import { RouterView } from 'vue-router';
 
 // <router-view/>
+import LayoutVue from './components/Layout.vue';
 
 
 </script>

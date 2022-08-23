@@ -1,6 +1,7 @@
 <script setup>
 import { ref  ,onMounted} from 'vue';
 
+
 const name = ref('Tonny');
 const age =ref(26);
 
@@ -92,19 +93,23 @@ onMounted(()=>{
   <button type="button" @click="doubleCount()">
     count is: {{ count }}
   </button>
-<EasyDataTable
-    :headers="headers"
-    :items="items"
-  />
 
-    <div class="fixed w-64 left-0 top-0 bottom-0 border-r" style="background: #e5302c;">
+    
+<table  class="w-full border rounded-md overflow-hidden">
+    <thead>
+        <tr class="text-sm bg-black-100 text-left divide-x">
+            <th class="py-2 px-3">First Name</th>
+            <th class="py-2 px-3">Last Name</th>
+            <th class="py-2 px-3">Msisdn</th>
+            <th class="py-2 px-3">Email</th>
+            <th class="py-2 px-3">Network</th>
+            <th class="py-2 px-3">Role</th>
+        </tr>
 
-    <div class="text-center">
-
-    </div>
-      </div>
+    </thead>
+    <tbody>
 
 
-
-
+    </tbody>
+</table>
 </template>
