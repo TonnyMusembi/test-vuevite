@@ -32,10 +32,12 @@ const isModalShown = ref(false)
 function showModal(){
     isModalShown.value=true
 }
-onMounted(()=>{
-    showModal()
+// onMounted(()=>{
+//     showModal()
 
-})
+// })
+
+
 
  const arr1 = ["pankaj", "sumit", "chandan", "ajay"];
       
@@ -58,18 +60,6 @@ onMounted(()=>{
         console.log('Output: ', output);
         
 }).catch(err => console.error(err));
-
-    const count = ref(0)
-
-
-methods: {
-      console.log(this.count) // 0
-
-  
-
-  
-}
-
 
 
 </script>
@@ -121,6 +111,7 @@ methods: {
         </tr>
     </tbody>
 </table>
+  <router-link to="/login"> Home</router-link>
 
 
 </template>

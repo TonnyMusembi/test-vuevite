@@ -19,11 +19,24 @@ export default function useCompanies() {
     const createUser = async() =>
         await axios.get(url, 'api/companies/create')
 
+
+    const resetPassword = async => {
+        let response = await axios.post(basUrl, '')
+        password: this.password.data.data
+            .catch((er) => {
+                response.log(er)
+            })
+
+
+
+    }
+
     return {
         companies,
         getCompanies,
         destroyCompanies,
         createUser,
+        resetPassword,
     }
 
 }
