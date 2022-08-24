@@ -50,15 +50,7 @@ onMounted(()=>{
     const second =[3,4,5];
     const third = first.concat(second);
 
-    // url =""
-    // fetch('url')
-    // .then((response) => {
-    //     console.log(response)
-        
-    // })
-    // .catch((error) => {
-    //     console.log(error)
-    // })
+  
 
     fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(result => result.json())
@@ -67,6 +59,16 @@ onMounted(()=>{
         
 }).catch(err => console.error(err));
 
+    const count = ref(0)
+
+
+methods: {
+      console.log(this.count) // 0
+
+  
+
+  
+}
 
 
 
@@ -77,7 +79,8 @@ onMounted(()=>{
     <input type="text" placeholder="name" v-model="Name"/>
     </div>
     <div>
-        <!-- <button  @click="submitForm">Submit</button> -->
+        <button @click="count++">{{ count }}</button>
+        <!-- <button Submit</button> -->
     </div>
     <h1 @click="handHeadClick">My Name is {{name}} an my age is {{age}}</h1>
     <MyButton/>
@@ -107,9 +110,17 @@ onMounted(()=>{
         </tr>
 
     </thead>
-    <tbody>
-
-
+    <tbody >
+      <tr >
+      <td >{{post.first_name}}</td>
+      <td >{{post.last_name}}</td>
+      <td >{{post.msisdn}}</td>
+      <td >{{post.email}}</td>
+       <td >{{post.role}}</td>
+        <td></td>
+        </tr>
     </tbody>
 </table>
+
+
 </template>
