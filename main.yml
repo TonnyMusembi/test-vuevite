@@ -1,0 +1,5 @@
+# Install dependencies and build app
+      - name: Install Dependencies
+        run: npm install
+      - name: Build app
+        run: npm run build
