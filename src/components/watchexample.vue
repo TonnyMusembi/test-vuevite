@@ -5,6 +5,14 @@
 <input type="text" v-model="Search" placeholder="Search">
 {{Search}}
 
+<!-- <input type="text" v-model="input" placeholder="Search fruits..." />
+  <div class="item fruit" v-for="fruit in filteredList()" :key="fruit">
+    <p>{{ fruit }}</p>
+  </div>
+  <div class="item error" v-if="input&&!filteredList().length">
+     <p>No results found!</p>
+  </div> -->
+
     
 </template>
 <script>
@@ -13,6 +21,15 @@ export default {
     setup(props) {
         const Search = ref("");
          console.log('Search',Search.value)
+//          let input = ref("");
+
+//          const fruits = ["apple", "banana", "orange"];
+// function filteredList() {
+//   return fruits.filter((fruit) =>
+//     fruit.toLowerCase().includes(input.value.toLowerCase())
+//   );
+// }
+
         // watch(Search,() =>   {
         //  console.log('Search',Search.value)
 
