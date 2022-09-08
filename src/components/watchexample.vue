@@ -23,9 +23,9 @@ import { ref } from "vue";
 import Datepicker from "vuejs-datepicker";
 
 export default {
-  components:{
-    Datepicker
-  },
+  // components: {
+  //   Datepicker,
+  // },
   setup(props) {
     const Search = ref("");
     console.log("Search", Search.value);
@@ -45,6 +45,7 @@ export default {
 
     return {
       Search,
+      Datepicker,
     };
   },
 };
