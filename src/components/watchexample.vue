@@ -17,6 +17,10 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <datepicker name="birthdate"></datepicker>
   </div>
+  
+
+
+  
 </template>
 <script>
 import { ref } from "vue";
