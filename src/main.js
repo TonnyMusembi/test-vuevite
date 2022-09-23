@@ -10,4 +10,4 @@ import "vue3-easy-data-table/dist/style.css";
 import router from "./router/index";
 
 createApp(App).use(router).mount("#app");
-app.use(Vue3EasyDataTable);
+// app.use(Vue3EasyDataTable);
