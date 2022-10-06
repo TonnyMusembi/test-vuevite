@@ -5,15 +5,23 @@
   <input type="text" v-model="Search" placeholder="Search" />
   {{ Search }}
 
-  <!-- <input type="text" v-model="input" placeholder="Search fruits..." />
-  <div class="item fruit" v-for="fruit in filteredList()" :key="fruit">
-    <p>{{ fruit }}</p>
-  </div>
-  <div class="item error" v-if="input&&!filteredList().length">
-     <p>No results found!</p>
-  </div> -->
-
   <div>
+    <div>
+      <table>
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Body</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+
+
+
+    </div>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <datepicker name="birthdate"></datepicker>
   </div>
@@ -61,6 +69,7 @@ export default {
       Search,
       Datepicker,
     };
+    
   },
 
 };
